@@ -1,0 +1,9 @@
+*.swp
+*.swo
+*.rdb
+
+*.DS_Store
+data/
+build/
+*.xcworkspace
+xcuserdata

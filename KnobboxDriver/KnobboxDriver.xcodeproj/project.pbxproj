@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1414E4C51BF346B00024A6FF /* Modes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1414E4C41BF346B00024A6FF /* Modes.swift */; };
+		144E14951BE9EB1200250328 /* ArcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144E14941BE9EB1200250328 /* ArcView.swift */; };
+		144E14971BE9EB4900250328 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144E14961BE9EB4900250328 /* Colors.swift */; };
+		144E14991BE9EB8300250328 /* RoundedRectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144E14981BE9EB8300250328 /* RoundedRectView.swift */; };
+		144E149B1BE9EBB400250328 /* SetVolume.m in Sources */ = {isa = PBXBuildFile; fileRef = 144E149A1BE9EBB400250328 /* SetVolume.m */; };
+		144E149D1BEA007800250328 /* Menulet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144E149C1BEA007800250328 /* Menulet.swift */; };
+		144E14C91BEB259300250328 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144E14C81BEB259300250328 /* CircleView.swift */; };
+		144E14D91BEC55B500250328 /* brightness.png in Resources */ = {isa = PBXBuildFile; fileRef = 144E14D51BEC55B500250328 /* brightness.png */; };
+		144E14DA1BEC55B500250328 /* keyboard.png in Resources */ = {isa = PBXBuildFile; fileRef = 144E14D61BEC55B500250328 /* keyboard.png */; };
+		144E14DB1BEC55B500250328 /* light.png in Resources */ = {isa = PBXBuildFile; fileRef = 144E14D71BEC55B500250328 /* light.png */; };
+		144E14DC1BEC55B500250328 /* volume.png in Resources */ = {isa = PBXBuildFile; fileRef = 144E14D81BEC55B500250328 /* volume.png */; };
+		14B67D5D1BE7266E0084C872 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B67D5C1BE7266E0084C872 /* AppDelegate.swift */; };
+		14B67D5F1BE7266E0084C872 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14B67D5E1BE7266E0084C872 /* Assets.xcassets */; };
+		14B67D621BE7266E0084C872 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B67D601BE7266E0084C872 /* MainMenu.xib */; };
+		14B67D6C1BE72AB60084C872 /* ValueOverlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B67D6B1BE72AB60084C872 /* ValueOverlayViewController.swift */; };
+		14B67D6E1BE7338B0084C872 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B67D6D1BE7338B0084C872 /* Helpers.swift */; };
+		14B67D801BE75FAC0084C872 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B67D781BE75FAC0084C872 /* HttpRequest.swift */; };
+		14B67D811BE75FAC0084C872 /* HttpParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B67D791BE75FAC0084C872 /* HttpParser.swift */; };
+		14B67D821BE75FAC0084C872 /* HttpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B67D7A1BE75FAC0084C872 /* HttpResponse.swift */; };
+		14B67D831BE75FAC0084C872 /* HttpHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B67D7B1BE75FAC0084C872 /* HttpHandlers.swift */; };
+		14B67D841BE75FAC0084C872 /* HttpServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B67D7C1BE75FAC0084C872 /* HttpServer.swift */; };
+		14B67D851BE75FAC0084C872 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B67D7D1BE75FAC0084C872 /* Socket.swift */; };
+		14B67D861BE75FAC0084C872 /* DemoServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B67D7E1BE75FAC0084C872 /* DemoServer.swift */; };
+		14B67D881BE760AA0084C872 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B67D871BE760AA0084C872 /* SwiftyJSON.swift */; };
+		14B67D8A1BE7FAA80084C872 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B67D891BE7FAA80084C872 /* IOKit.framework */; };
+		14B67D8F1BE99BD20084C872 /* USBDevice.c in Sources */ = {isa = PBXBuildFile; fileRef = 14B67D8E1BE99BD20084C872 /* USBDevice.c */; };
+		14B67D921BE99FD20084C872 /* SetBrightness.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B67D911BE99FD20084C872 /* SetBrightness.m */; };
+		14BF70681BF1E10F0059A61B /* HTTPServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BF70671BF1E10F0059A61B /* HTTPServer.swift */; };
+		14BF706A1BF1E2900059A61B /* KnobboxController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BF70691BF1E2900059A61B /* KnobboxController.swift */; };
+		14F0CB0E1BEC665800186239 /* ModeDropdownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F0CB0D1BEC665800186239 /* ModeDropdownViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1414E4C41BF346B00024A6FF /* Modes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Modes.swift; sourceTree = "<group>"; };
+		144E14941BE9EB1200250328 /* ArcView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArcView.swift; sourceTree = "<group>"; };
+		144E14961BE9EB4900250328 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		144E14981BE9EB8300250328 /* RoundedRectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedRectView.swift; sourceTree = "<group>"; };
+		144E149A1BE9EBB400250328 /* SetVolume.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetVolume.m; sourceTree = "<group>"; };
+		144E149C1BEA007800250328 /* Menulet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menulet.swift; sourceTree = "<group>"; };
+		144E14C81BEB259300250328 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		144E14D51BEC55B500250328 /* brightness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brightness.png; sourceTree = "<group>"; };
+		144E14D61BEC55B500250328 /* keyboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyboard.png; sourceTree = "<group>"; };
+		144E14D71BEC55B500250328 /* light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = light.png; sourceTree = "<group>"; };
+		144E14D81BEC55B500250328 /* volume.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = volume.png; sourceTree = "<group>"; };
+		14B67D591BE7266E0084C872 /* KnobboxDriver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnobboxDriver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14B67D5C1BE7266E0084C872 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		14B67D5E1BE7266E0084C872 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14B67D611BE7266E0084C872 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		14B67D631BE7266E0084C872 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14B67D6B1BE72AB60084C872 /* ValueOverlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueOverlayViewController.swift; sourceTree = "<group>"; };
+		14B67D6D1BE7338B0084C872 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		14B67D781BE75FAC0084C872 /* HttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
+		14B67D791BE75FAC0084C872 /* HttpParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpParser.swift; sourceTree = "<group>"; };
+		14B67D7A1BE75FAC0084C872 /* HttpResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpResponse.swift; sourceTree = "<group>"; };
+		14B67D7B1BE75FAC0084C872 /* HttpHandlers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpHandlers.swift; sourceTree = "<group>"; };
+		14B67D7C1BE75FAC0084C872 /* HttpServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpServer.swift; sourceTree = "<group>"; };
+		14B67D7D1BE75FAC0084C872 /* Socket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Socket.swift; sourceTree = "<group>"; };
+		14B67D7E1BE75FAC0084C872 /* DemoServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoServer.swift; sourceTree = "<group>"; };
+		14B67D871BE760AA0084C872 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		14B67D891BE7FAA80084C872 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		14B67D8B1BE7FD660084C872 /* KnobboxDriver-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KnobboxDriver-Bridging-Header.h"; sourceTree = "<group>"; };
+		14B67D8E1BE99BD20084C872 /* USBDevice.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = USBDevice.c; sourceTree = "<group>"; };
+		14B67D901BE99FA30084C872 /* USBDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = USBDevice.h; sourceTree = "<group>"; };
+		14B67D911BE99FD20084C872 /* SetBrightness.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetBrightness.m; sourceTree = "<group>"; };
+		14BF70671BF1E10F0059A61B /* HTTPServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPServer.swift; sourceTree = "<group>"; };
+		14BF70691BF1E2900059A61B /* KnobboxController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KnobboxController.swift; sourceTree = "<group>"; };
+		14F0CB0D1BEC665800186239 /* ModeDropdownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModeDropdownViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14B67D561BE7266E0084C872 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14B67D8A1BE7FAA80084C872 /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		144E14BF1BEB08F900250328 /* Outputs */ = {
+			isa = PBXGroup;
+			children = (
+				14B67D911BE99FD20084C872 /* SetBrightness.m */,
+				144E149A1BE9EBB400250328 /* SetVolume.m */,
+			);
+			name = Outputs;
+			sourceTree = "<group>";
+		};
+		144E14C01BEB090000250328 /* USB Driver */ = {
+			isa = PBXGroup;
+			children = (
+				14B67D901BE99FA30084C872 /* USBDevice.h */,
+				14B67D8E1BE99BD20084C872 /* USBDevice.c */,
+			);
+			name = "USB Driver";
+			sourceTree = "<group>";
+		};
+		144E14C11BEB090700250328 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				144E14941BE9EB1200250328 /* ArcView.swift */,
+				144E14C81BEB259300250328 /* CircleView.swift */,
+				144E14981BE9EB8300250328 /* RoundedRectView.swift */,
+			);
+			name = "Custom Views";
+			sourceTree = "<group>";
+		};
+		144E14D41BEC55B500250328 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				144E14D51BEC55B500250328 /* brightness.png */,
+				144E14D61BEC55B500250328 /* keyboard.png */,
+				144E14D71BEC55B500250328 /* light.png */,
+				144E14D81BEC55B500250328 /* volume.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+		14B67D501BE7266E0084C872 = {
+			isa = PBXGroup;
+			children = (
+				14B67D891BE7FAA80084C872 /* IOKit.framework */,
+				14B67D7F1BE75FAC0084C872 /* Swifter */,
+				14B67D5B1BE7266E0084C872 /* KnobboxDriver */,
+				14B67D5A1BE7266E0084C872 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		14B67D5A1BE7266E0084C872 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14B67D591BE7266E0084C872 /* KnobboxDriver.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14B67D5B1BE7266E0084C872 /* KnobboxDriver */ = {
+			isa = PBXGroup;
+			children = (
+				14B67D6D1BE7338B0084C872 /* Helpers.swift */,
+				144E14961BE9EB4900250328 /* Colors.swift */,
+				1414E4C41BF346B00024A6FF /* Modes.swift */,
+				14B67D5C1BE7266E0084C872 /* AppDelegate.swift */,
+				14BF70691BF1E2900059A61B /* KnobboxController.swift */,
+				14BF70671BF1E10F0059A61B /* HTTPServer.swift */,
+				144E149C1BEA007800250328 /* Menulet.swift */,
+				14B67D6B1BE72AB60084C872 /* ValueOverlayViewController.swift */,
+				14F0CB0D1BEC665800186239 /* ModeDropdownViewController.swift */,
+				144E14C01BEB090000250328 /* USB Driver */,
+				144E14BF1BEB08F900250328 /* Outputs */,
+				144E14C11BEB090700250328 /* Custom Views */,
+				14B67D601BE7266E0084C872 /* MainMenu.xib */,
+				14B67D5E1BE7266E0084C872 /* Assets.xcassets */,
+				14B67D631BE7266E0084C872 /* Info.plist */,
+				14B67D8B1BE7FD660084C872 /* KnobboxDriver-Bridging-Header.h */,
+				144E14D41BEC55B500250328 /* Icons */,
+			);
+			path = KnobboxDriver;
+			sourceTree = "<group>";
+		};
+		14B67D7F1BE75FAC0084C872 /* Swifter */ = {
+			isa = PBXGroup;
+			children = (
+				14B67D871BE760AA0084C872 /* SwiftyJSON.swift */,
+				14B67D781BE75FAC0084C872 /* HttpRequest.swift */,
+				14B67D791BE75FAC0084C872 /* HttpParser.swift */,
+				14B67D7A1BE75FAC0084C872 /* HttpResponse.swift */,
+				14B67D7B1BE75FAC0084C872 /* HttpHandlers.swift */,
+				14B67D7C1BE75FAC0084C872 /* HttpServer.swift */,
+				14B67D7D1BE75FAC0084C872 /* Socket.swift */,
+				14B67D7E1BE75FAC0084C872 /* DemoServer.swift */,
+			);
+			name = Swifter;
+			path = ../../swifter/Common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14B67D581BE7266E0084C872 /* KnobboxDriver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14B67D661BE7266E0084C872 /* Build configuration list for PBXNativeTarget "KnobboxDriver" */;
+			buildPhases = (
+				14B67D551BE7266E0084C872 /* Sources */,
+				14B67D561BE7266E0084C872 /* Frameworks */,
+				14B67D571BE7266E0084C872 /* Resources */,
+				1414E4C31BF33EAE0024A6FF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KnobboxDriver;
+			productName = KnobboxDriver;
+			productReference = 14B67D591BE7266E0084C872 /* KnobboxDriver.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14B67D511BE7266E0084C872 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Prontotype;
+				TargetAttributes = {
+					14B67D581BE7266E0084C872 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = 14B67D541BE7266E0084C872 /* Build configuration list for PBXProject "KnobboxDriver" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 14B67D501BE7266E0084C872;
+			productRefGroup = 14B67D5A1BE7266E0084C872 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14B67D581BE7266E0084C872 /* KnobboxDriver */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14B67D571BE7266E0084C872 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				144E14DB1BEC55B500250328 /* light.png in Resources */,
+				144E14DA1BEC55B500250328 /* keyboard.png in Resources */,
+				14B67D5F1BE7266E0084C872 /* Assets.xcassets in Resources */,
+				144E14DC1BEC55B500250328 /* volume.png in Resources */,
+				144E14D91BEC55B500250328 /* brightness.png in Resources */,
+				14B67D621BE7266E0084C872 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1414E4C31BF33EAE0024A6FF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14B67D551BE7266E0084C872 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14BF70681BF1E10F0059A61B /* HTTPServer.swift in Sources */,
+				14B67D8F1BE99BD20084C872 /* USBDevice.c in Sources */,
+				144E14971BE9EB4900250328 /* Colors.swift in Sources */,
+				14B67D6C1BE72AB60084C872 /* ValueOverlayViewController.swift in Sources */,
+				14BF706A1BF1E2900059A61B /* KnobboxController.swift in Sources */,
+				14B67D801BE75FAC0084C872 /* HttpRequest.swift in Sources */,
+				14B67D851BE75FAC0084C872 /* Socket.swift in Sources */,
+				14F0CB0E1BEC665800186239 /* ModeDropdownViewController.swift in Sources */,
+				14B67D921BE99FD20084C872 /* SetBrightness.m in Sources */,
+				144E149D1BEA007800250328 /* Menulet.swift in Sources */,
+				144E14951BE9EB1200250328 /* ArcView.swift in Sources */,
+				14B67D881BE760AA0084C872 /* SwiftyJSON.swift in Sources */,
+				14B67D5D1BE7266E0084C872 /* AppDelegate.swift in Sources */,
+				14B67D811BE75FAC0084C872 /* HttpParser.swift in Sources */,
+				144E149B1BE9EBB400250328 /* SetVolume.m in Sources */,
+				144E14991BE9EB8300250328 /* RoundedRectView.swift in Sources */,
+				14B67D861BE75FAC0084C872 /* DemoServer.swift in Sources */,
+				14B67D841BE75FAC0084C872 /* HttpServer.swift in Sources */,
+				144E14C91BEB259300250328 /* CircleView.swift in Sources */,
+				14B67D821BE75FAC0084C872 /* HttpResponse.swift in Sources */,
+				14B67D831BE75FAC0084C872 /* HttpHandlers.swift in Sources */,
+				14B67D6E1BE7338B0084C872 /* Helpers.swift in Sources */,
+				1414E4C51BF346B00024A6FF /* Modes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		14B67D601BE7266E0084C872 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14B67D611BE7266E0084C872 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		14B67D641BE7266E0084C872 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		14B67D651BE7266E0084C872 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		14B67D671BE7266E0084C872 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KnobboxDriver/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = us.prontotype.KnobboxDriver;
+				PRODUCT_NAME = KnobboxDriver;
+				SWIFT_OBJC_BRIDGING_HEADER = "KnobboxDriver/KnobboxDriver-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		14B67D681BE7266E0084C872 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = KnobboxDriver/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = us.prontotype.KnobboxDriver;
+				PRODUCT_NAME = KnobboxDriver;
+				SWIFT_OBJC_BRIDGING_HEADER = "KnobboxDriver/KnobboxDriver-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14B67D541BE7266E0084C872 /* Build configuration list for PBXProject "KnobboxDriver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14B67D641BE7266E0084C872 /* Debug */,
+				14B67D651BE7266E0084C872 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14B67D661BE7266E0084C872 /* Build configuration list for PBXNativeTarget "KnobboxDriver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14B67D671BE7266E0084C872 /* Debug */,
+				14B67D681BE7266E0084C872 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14B67D511BE7266E0084C872 /* Project object */;
+}

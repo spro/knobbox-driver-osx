@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9059"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="KnobboxDriver" customModuleProvider="target">
+            <connections>
+                <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+            <items>
+                <menuItem title="KnobboxDriver" id="1Xt-HY-uBw">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="KnobboxDriver" systemMenu="apple" id="uQy-DD-JDr">
+                        <items>
+                            <menuItem title="About KnobboxDriver" id="5kV-Vb-QxS">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="orderFrontStandardAboutPanel:" target="-1" id="Exp-CZ-Vem"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
+                            <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW"/>
+                            <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
+                            <menuItem title="Services" id="NMo-om-nkz">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
+                            <menuItem title="Hide KnobboxDriver" keyEquivalent="h" id="Olw-nP-bQN">
+                                <connections>
+                                    <action selector="hide:" target="-1" id="PnN-Uc-m68"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Hide Others" keyEquivalent="h" id="Vdr-fp-XzO">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="hideOtherApplications:" target="-1" id="VT4-aY-XCT"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Show All" id="Kd2-mp-pUS">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="unhideAllApplications:" target="-1" id="Dhg-Le-xox"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
+                            <menuItem title="Quit KnobboxDriver" keyEquivalent="q" id="4sb-4s-VLi">
+                                <connections>
+                                    <action selector="terminate:" target="-1" id="Te7-pn-YzF"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+        </menu>
+        <window title="ValueOverlay" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hasShadow="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="QvC-M9-y7g">
+            <windowStyleMask key="styleMask" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" bottomStrut="YES"/>
+            <rect key="contentRect" x="335" y="200" width="200" height="200"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+            <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="H3U-Jc-yzZ" customClass="RoundedRectView" customModule="KnobboxDriver" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                        <animations/>
+                    </customView>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="egn-l4-5fI" customClass="ArcView" customModule="KnobboxDriver" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="W2I-DK-zRm">
+                                <rect key="frame" x="174" y="168" width="13" height="17"/>
+                                <animations/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="0" id="a48-b2-L5i">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" red="1" green="0.99993491172790527" blue="0.99997484683990479" alpha="0.5" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="W2I-DK-zRm" secondAttribute="trailing" constant="15" id="7zr-3x-tY4"/>
+                            <constraint firstItem="W2I-DK-zRm" firstAttribute="top" secondItem="egn-l4-5fI" secondAttribute="top" constant="15" id="Eeu-ZL-9aK"/>
+                        </constraints>
+                        <animations/>
+                    </customView>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="s8y-dR-ZX2">
+                        <rect key="frame" x="68" y="86" width="65" height="29"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Label" id="OcF-1C-mzC">
+                            <font key="font" metaFont="systemLight" size="24"/>
+                            <color key="textColor" red="1" green="0.99993491172790527" blue="0.99997472763061523" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yfg-Ft-X3W">
+                        <rect key="frame" x="50" y="50" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="J4L-DV-cJG"/>
+                            <constraint firstAttribute="height" constant="100" id="lYz-2B-GqB"/>
+                        </constraints>
+                        <animations/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="VZ2-u2-ncq"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="s8y-dR-ZX2" firstAttribute="centerX" secondItem="EiT-Mj-1SZ" secondAttribute="centerX" id="4Le-o9-3M0"/>
+                    <constraint firstItem="yfg-Ft-X3W" firstAttribute="centerY" secondItem="EiT-Mj-1SZ" secondAttribute="centerY" id="Axx-8c-o9l"/>
+                    <constraint firstAttribute="bottom" secondItem="H3U-Jc-yzZ" secondAttribute="bottom" id="C82-Mv-1Xw"/>
+                    <constraint firstItem="s8y-dR-ZX2" firstAttribute="centerY" secondItem="EiT-Mj-1SZ" secondAttribute="centerY" id="JCM-jd-9PB"/>
+                    <constraint firstAttribute="trailing" secondItem="H3U-Jc-yzZ" secondAttribute="trailing" id="LbR-Ne-azf"/>
+                    <constraint firstAttribute="trailing" secondItem="egn-l4-5fI" secondAttribute="trailing" id="OSt-WV-Obm"/>
+                    <constraint firstItem="H3U-Jc-yzZ" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="ZfZ-3L-Mi6"/>
+                    <constraint firstItem="egn-l4-5fI" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" id="ezV-9v-hQT"/>
+                    <constraint firstItem="H3U-Jc-yzZ" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" id="kqx-cP-QWn"/>
+                    <constraint firstItem="yfg-Ft-X3W" firstAttribute="centerX" secondItem="EiT-Mj-1SZ" secondAttribute="centerX" id="qWg-VJ-muc"/>
+                    <constraint firstAttribute="bottom" secondItem="egn-l4-5fI" secondAttribute="bottom" id="v36-1W-MrT"/>
+                    <constraint firstItem="egn-l4-5fI" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="x4z-zw-hNG"/>
+                </constraints>
+                <animations/>
+            </view>
+        </window>
+        <viewController id="y4g-Hp-qwI" customClass="ValueOverlayViewController" customModule="KnobboxDriver" customModuleProvider="target">
+            <connections>
+                <outlet property="arcView" destination="egn-l4-5fI" id="q4s-ZX-9ww"/>
+                <outlet property="modeIcon" destination="yfg-Ft-X3W" id="HQz-d7-PbK"/>
+                <outlet property="modeLabel" destination="W2I-DK-zRm" id="M76-L8-RWw"/>
+                <outlet property="valueLabel" destination="s8y-dR-ZX2" id="17m-la-Cea"/>
+                <outlet property="view" destination="EiT-Mj-1SZ" id="Pm1-bD-hRG"/>
+            </connections>
+        </viewController>
+    </objects>
+</document>
